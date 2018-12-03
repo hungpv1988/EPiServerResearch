@@ -1,0 +1,21 @@
+﻿@model HungPhanBlockViewModel
+
+<div>
+    @Html.PropertyFor(x => x.Image)
+
+    <h3 @Html.EditAttributes(x => x.BlockHeading)> @Model.BlockHeading </h3>
+    <a class="btn-blue" title="@Model.Text" href="@Url.ContentUrl(Model.Link)" @Html.EditAttributes(m => m.Text)>
+        @{
+            var buttonText = string.IsNullOrWhiteSpace(Model.Text)
+                ? Html.Translate("/blocks/buttonblockcontrol/buttondefaulttext")
+                : Model.Text;
+        }
+        @buttonText
+    </a>
+
+    @Html.PropertyFor(x => x.BlockCompany)
+
+    @Html.PropertyFor(x => x.ContactPageLink)
+
+    @Html.PropertyFor(x => x.TextArea)
+</div>
