@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using EPiServer.Core;
+using EPiServer.DataAbstraction;
+using EPiServer.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace EPiServerResearch.Models.Pages
 {
@@ -14,6 +14,15 @@ namespace EPiServerResearch.Models.Pages
     [SiteImageUrl(Global.StaticGraphicsFolderPath + "page-type-thumbnail-article.png")]
     public class EmployeePage : SitePageData
     {
+        [Display(
+    GroupName = SystemTabNames.Content,
+    Order = 310)]
+        [CultureSpecific]
+        public virtual XhtmlString MainBody { get; set; }
 
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 320)]
+        public virtual ContentArea MainContentArea { get; set; }
     }
 }
