@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EPiServer.Core;
+using EPiServer.Web;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -12,7 +14,7 @@ namespace EPiServerResearch.Models.Blocks
     {
         public virtual string Name { get; set; }
 
-        public virtual string Id { get; set; }
+        public virtual int Id { get; set; }
 
         public virtual string Company { get; set; }
 
@@ -22,9 +24,17 @@ namespace EPiServerResearch.Models.Blocks
 
         public virtual string Wife { get; set; }
 
+        [StringLength(100)]
         public virtual string Interest { get; set; }
+
+        [UIHint(UIHint.Textarea)]
+        public virtual string Description { get; set; }
 
         [Range(1, 10)]
         public virtual int Age { get; set; }
+
+        public virtual DateTime Birthday { get; set; }
+
+        public virtual XhtmlString Resume { get; set; }
     }
 }
