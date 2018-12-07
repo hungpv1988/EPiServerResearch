@@ -30,6 +30,18 @@ namespace EPiServerResearch.TemplateDescriptor
                         Tags = new string[] { "Adults" }
                     }
            );
+
+            //viewTemplateModelRegistrator.Add(
+            //        typeof(StrategyBlock),
+            //        new EPiServer.DataAbstraction.TemplateModel()
+            //        {
+            //            Name = "StrategyBlock",
+            //            Description = "Strategy block",
+            //            Path = "~/Views/Shared/Blocks/StrategyBlock.cshtml",
+                        
+            //            AvailableWithoutTag = true
+            //        }
+            //);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -22,5 +23,8 @@ namespace EPiServerResearch.Models.Blocks
         public virtual string Wife { get; set; }
 
         public virtual string Interest { get; set; }
+
+        [Range(1, 10)]
+        public virtual int Age { get; set; }
     }
 }
