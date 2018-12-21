@@ -301,8 +301,10 @@
     <Compile Include="Business\Rendering\TemplateCoordinator.cs" />
     <Compile Include="Business\ServiceLocatorDependencyResolver.cs" />
     <Compile Include="Business\UIDescriptors\ContainerPageUIDescriptor.cs" />
+    <Compile Include="CompositeView\GoalView.cs" />
     <Compile Include="Controllers\ContactBlockController.cs" />
     <Compile Include="Controllers\DefaultPageController.cs" />
+    <Compile Include="Controllers\GoalController.cs" />
     <Compile Include="Controllers\HungPhanBlockController.cs" />
     <Compile Include="Controllers\ImageFileController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
@@ -361,15 +363,24 @@
     <Compile Include="Models\ViewModels\PreviewModel.cs" />
     <Compile Include="Models\ViewModels\VideoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rest\GoalContextResolver.cs" />
+    <Compile Include="Rest\GoalMenuProvider.cs" />
+    <Compile Include="Rest\GoalStore.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="TemplateDescriptor\PersonalDetailsRendering.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Goal\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="ClientResources\Images\icons\layoutIcons24x24.png" />
     <Content Include="ClientResources\Scripts\command\ContentAreaWithStrateryCommands.js" />
     <Content Include="ClientResources\Scripts\command\SelectStrategy.js" />
     <Content Include="ClientResources\Scripts\Editors\StringList.js" />
+    <Content Include="ClientResources\Scripts\Menu\GoalManager.js" />
+    <Content Include="ClientResources\Scripts\Menu\GoalNavigation.js" />
+    <Content Include="ClientResources\Scripts\Menu\templates\GoalManager.html" />
+    <Content Include="ClientResources\Scripts\Menu\templates\GoalNavigation.html" />
     <Content Include="ClientResources\Scripts\overlay\StrategyBlock.js" />
     <Content Include="ClientResources\Scripts\overlay\StrategyContentArea.js" />
     <Content Include="ClientResources\Scripts\widget\StrategySelector.js" />
@@ -424,7 +435,9 @@
     <Content Include="Static\jwplayer\video.mp4" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\GeoLiteCity.dat" />
     <Content Include="App_Data\DefaultSiteContent.episerverdata" />
     <None Include="EPiServerLog.config" />
@@ -439,7 +452,9 @@
     <Content Include="modules\_protected\EPiServer.Forms\Views\ElementBlocks\Web.config" />
     <Content Include="modules\_protected\EPiServer.Forms\Forms.config" />
     <Content Include="modules\_protected\EPiServer.Forms\EPiServer.Forms.zip" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Views\_viewstart.cshtml" />
     <Content Include="Views\VideoFile\Index.cshtml" />
     <Content Include="Views\StartPage\Index.cshtml" />

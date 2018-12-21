@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <language name="English" id="en">
+    <contenttypes>
+      <persondetails>
+        <description>Personal Detail Block</description>
+        <name>Personal Details</name>
+        <properties>
+          <YourName>
+            <caption>Your name</caption>
+            <help>Your help</help>
+          </YourName>
+
+          <id>
+            <caption>Your id</caption>
+            <help>Your id help</help>
+          </id>
+
+          <company>
+            <caption> your company</caption>
+            <help>Your company help</help>
+          </company>
+        </properties>
+      </persondetails>
+
+      <sampleblock>
+        <description>Sample Block</description>
+        <name>Sample</name>
+      </sampleblock>
+
+      <testblock>
+        <description>Test Block</description>
+        <name>Test</name>
+      </testblock>
+    </contenttypes>
+  </language>
+</languages>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en">
+    <episerver>
+      <personalizationcms>
+        <strategymenu>
+          <label>Content Strategy</label>
+          <headingtext>Select a Strategy</headingtext>
+          <defaultoptiontext>Default strategy</defaultoptiontext>
+        </strategymenu>
+      </personalizationcms>
+      <strategy>
+        <recommendation>
+          <title>Recommendations for you</title>
+        </recommendation>
+      </strategy>
+      <goal>
+        <nodatamessage>No Data</nodatamessage>
+        <description>Description</description>
+      </goal>
+    </episerver>
+
+    <contenttypes>
+      <strategycontainerblock>
+        <description>Strategy Block</description>
+        <name>Strategy Block</name>
+        <properties>
+          <defaultstrategy> Default strategy</defaultstrategy>
+          <numberofrecommendation>Number of recommendations</numberofrecommendation>
+        </properties>
+      </strategycontainerblock>
+    </contenttypes>
+  </language>
+</languages>
